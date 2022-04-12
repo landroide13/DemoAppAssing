@@ -9,7 +9,7 @@
 
             <Entry Keyboard="Text" Placeholder="Company Name" ></Entry>
             <Entry Keyboard="Text" Placeholder="Company Address" ></Entry>
-            <Button Text="Add Comapany" Clicked="Button_Clicked" />
+            <Button Text="Add Comapany" Clicked="Button_Clicked"/>
 
         </StackLayout>
         

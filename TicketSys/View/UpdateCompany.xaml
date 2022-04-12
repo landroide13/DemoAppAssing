@@ -4,6 +4,18 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="TicketSys.View.UpdateCompany">
     <ContentPage.Content>
+        <StackLayout>
+            <ListView>
+
+            </ListView>
+
+            <StackLayout>
+                <Entry Keyboard="Text" Placeholder="Update Company Name" ></Entry>
+                <Entry Keyboard="Text" Placeholder="Update Company Address" ></Entry>
+                <Button Text="Update Comapany" Clicked="Button_Clicked" />
+            </StackLayout>
+
+        </StackLayout>
         
     </ContentPage.Content>
 </ContentPage>
