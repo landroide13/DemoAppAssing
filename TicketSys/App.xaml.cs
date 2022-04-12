@@ -10,7 +10,7 @@ namespace TicketSys
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new View.homePage());
         }
 
         protected override void OnStart()
