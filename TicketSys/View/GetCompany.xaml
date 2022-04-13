@@ -8,9 +8,8 @@
         <StackLayout>
 
             <Label Text="Companies Registered Here" />
-            <ListView>
+            <ListView x:Name="listCom"></ListView>
 
-            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

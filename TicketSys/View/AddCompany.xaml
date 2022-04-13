@@ -7,9 +7,9 @@
 
         <StackLayout>
 
-            <Entry Keyboard="Text" Placeholder="Company Name" ></Entry>
-            <Entry Keyboard="Text" Placeholder="Company Address" ></Entry>
-            <Button Text="Add Comapany" Clicked="Button_Clicked"/>
+            <Entry Keyboard="Text" Placeholder="Company Name" x:Name="comName" ></Entry>
+            <Entry Keyboard="Text" Placeholder="Company Address" x:Name="comAddress" ></Entry>
+            <Button Text="Add Company" Clicked="Button_Add"/>
 
         </StackLayout>
         
