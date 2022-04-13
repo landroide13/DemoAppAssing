@@ -5,14 +5,13 @@
     x:Class="TicketSys.View.UpdateCompany">
     <ContentPage.Content>
         <StackLayout>
-            <ListView>
-
-            </ListView>
+            <ListView x:Name="listCom"></ListView>
 
             <StackLayout>
-                <Entry Keyboard="Text" Placeholder="Update Company Name" ></Entry>
-                <Entry Keyboard="Text" Placeholder="Update Company Address" ></Entry>
-                <Button Text="Update Comapany" Clicked="Button_Clicked" />
+                <Entry x:Name="comID" Text="ID" IsVisible="False" />
+                <Entry x:Name="comName" Keyboard="Text" Placeholder="Update Company Name" ></Entry>
+                <Entry x:Name="comAddress" Keyboard="Text" Placeholder="Update Company Address" ></Entry>
+                <Button Text="Update Comapany" Clicked="Button_Update" />
             </StackLayout>
 
         </StackLayout>
