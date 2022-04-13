@@ -32,15 +32,21 @@ namespace TicketSys.View
 
         }
 
-        void Button_Update(System.Object sender, System.EventArgs e)
+        async void Button_Update(System.Object sender, System.EventArgs e)
         {
             var db = new SQLiteConnection(dbPath);
 
             Model.Company com = new Model.Company
             {
                 ID = Convert.ToInt32(comID.Text),
-
+                Name = comName.Text,
+                Address = comAddress.Text,
             };
+
+            db.Update(com);
+
+            await DisplayAlert(null, com.Name + " " + "Updated", "OK");
+            await Navigation.PopAsync();
         }
     }
 }
